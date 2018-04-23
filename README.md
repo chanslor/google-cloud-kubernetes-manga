@@ -73,7 +73,6 @@ kubectl set image deployment/manganode manganode=gcr.io/manganode/manganode:v2
 
 gcloud components update
 kubectl rollout status deployment manganode
-gcloud compute --project "manganode" ssh --zone "us-central1-a" "gke-manganode-1-default-pool-8f8ffc56-1r3t"
 
 
 ```
