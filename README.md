@@ -39,13 +39,16 @@ docker push gcr.io/manganode/manganode:v1
 #configure Kubernetes
 #---- KUBERNETES ----
 #
+
 gcloud container clusters get-credentials manganode-1 --zone us-central1-a --project manganode
+
+kubectl run manganode --image gcr.io/manganode/manganode:v1 --port 8080
+
 ```
-Default setup is:
+Login to the GUI to see the default setup:
 ![compute-engines](images/compute-engines.png)
  
 ```bash
-kubectl run manganode --image gcr.io/manganode/manganode:v1 --port 8080
 kubectl get pods
 kubectl logs manganode-744476df96-852kx
 kubectl cluster-info
