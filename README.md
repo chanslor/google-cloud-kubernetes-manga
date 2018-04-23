@@ -54,8 +54,12 @@ kubectl logs manganode-744476df96-852kx
 kubectl cluster-info
 kubectl get events
 kubectl config view
+```
+
+```bash
 kubectl expose deployment manganode --type="LoadBalancer"
 ```
+![load-balancer](images/load-balancer.png)
 
 ```bash
 #Push update to the docker image
