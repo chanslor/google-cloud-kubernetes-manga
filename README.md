@@ -77,3 +77,5 @@ kubectl rollout status deployment manganode
 
 ```
 
+![pushed-updates](images/pushed-updates.png)
+
