@@ -60,4 +60,7 @@ gcloud components update
 kubectl rollout status deployment manganode
 gcloud compute --project "manganode" ssh --zone "us-central1-a" "gke-manganode-1-default-pool-8f8ffc56-1r3t"
 
+
 ```
+
+![compute-engines](images/compute-engines.png)
