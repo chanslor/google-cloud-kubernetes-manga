@@ -6,6 +6,6 @@ fs.readFile('manga.png', function(err, data) {
   http.createServer(function(req, res) {
     res.writeHead(200, {'Content-Type': 'image/jpeg'});
     res.end(data); // Send the file data to the browser.
-  }).listen(8124);
-  console.log('Server running at http://localhost:8124/');
+  }).listen(8080);
+  console.log('Server running port 8080');
 });
