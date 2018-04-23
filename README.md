@@ -61,9 +61,13 @@ kubectl expose deployment manganode --type="LoadBalancer"
 ```
 ![load-balancer](images/load-balancer.png)
 
+Click in the EndPoints to test your app
+
+Now, time to push an update...
+
 ```bash
 #Push update to the docker image
-#Changed to port 8080
+#Changed the app port to 8080, had a typo in the first version.
  
 kubectl set image deployment/manganode manganode=gcr.io/manganode/manganode:v2
 
