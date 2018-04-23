@@ -79,3 +79,9 @@ kubectl rollout status deployment manganode
 
 ![pushed-updates](images/pushed-updates.png)
 
+Delete the project:
+```bash
+kubectl delete service,deployment manganode
+gcloud projects delete manganode
+```
+
