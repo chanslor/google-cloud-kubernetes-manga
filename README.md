@@ -1,22 +1,26 @@
 # google-cloud-kubernetes-manga
 
-*******************
-MANGA:
+```bash
+#setup
 $HOME/MANGA/manganode
 gcloud auth list
 gcloud config list
 gcloud info
 gcloud projects list
-*******************
 
-#docker rm $(docker ps -a -q)
+#pruning
+docker rm $(docker ps -a -q)
 docker container prune
 
+#delete the image
 docker rmi manga
 
+#build/rebuild the image
 docker build -t manga .
 
-docker run --name=manga -it -d -p 8080:8124 manga
+docker run --name=manga -it -d -p 8080:8080 manga
+```
+
 
 ----  GOOGLE -----
 gcloud auth configure-docker
